@@ -1,0 +1,77 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,c,even=0,odd=0;
+clrscr();
+printf("enter any 5 digit no");
+scanf("%d",&num);
+if(num!=0)
+{
+ c=num%10;
+ if(c%2==0)
+ {
+   even=even+c;
+ }
+ else
+ {
+ odd=odd+c;
+ }
+num=num/10;
+}
+if(num!=0)
+{
+ c=num%10;
+ if(c%2==0)
+ {
+   even=even+c;
+ }
+ else
+ {
+ odd=odd+c;
+ }
+num=num/10;
+}
+if(num!=0)
+{
+ c=num%10;
+ if(c%2==0)
+ {
+   even=even+c;
+ }
+ else
+ {
+ odd=odd+c;
+ }
+num=num/10;
+}
+if(num!=0)
+{
+ c=num%10;
+ if(c%2==0)
+ {
+   even=even+c;
+ }
+ else
+ {
+ odd=odd+c;
+ }
+num=num/10;
+}
+if(num!=0)
+{
+ c=num%10;
+ if(c%2==0)
+ {
+   even=even+c;
+ }
+ else
+ {
+ odd=odd+c;
+ }
+num=num/10;
+}
+printf("addition of even no is %d\n", even);
+printf("addition of odd no is %d", odd);
+getch();
+}
