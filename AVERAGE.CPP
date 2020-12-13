@@ -9,7 +9,7 @@ void main()
   scanf("%d",&n);
   printf("enter weight of items");
   scanf("%f",&w);
-  a=(w/n)*100;
+  a=w/n;
   printf("Average value of items=%f ",a);
   getch();
 }
