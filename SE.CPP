@@ -1,20 +1,26 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-struct employee
+struct Prod
 {
-char name[10];
-int eno;
-char post[10];
-float salary;
+  int Pid;
+  char Pname[50];
+  float Pprice,quantity;
 };
 
 void main()
 {
-struct employee E;
-clrscr();
-strcpy(E.name,"Rosh");
-strcpy(E.post,"AR");
-printf("\n our Employee\n name:- %s \n eno:- %d \npost:-%s\n salary:-%f",E.name,E.eno,E.post,E.salary);
-getch();
+  struct Prod P;
+  clrscr();
+  printf("\nPlease enter product ID\n");
+  scanf("%d",&P.Pid);
+  printf("\n Please enter product name\n");
+  scanf("%s",&P.Pname);
+  printf("\n please enter product Price\n");
+  scanf("%f",&P.Pprice);
+  printf("Please enter product quantity");
+  scanf("%f",&P.quantity);
+  printf("\nProduct Detail\n");
+  printf("\n ID:- %d \n name:- %s \n Price:- %.2f\n Quantity:- %f",P.Pid,P.Pname,P.Pprice,P.quantity);
+  getch();
 }
