@@ -9,10 +9,15 @@ void main()
    {
       scanf("%d",&no[i]);
    }
-   printf("10 natural number\n");
+   printf("\n 10 natural no");
    for(i=0;i<10;i++)
    {
-       printf("%d\n",no[i]);
+       printf("\n%d",no[i]);
    }
+   for(i=0;i<10;i++)
+   {
+      n=no[i]+i;
+   }
+   printf("\naddition on first 10 natural no is :- %d",n);
    getch();
 }
