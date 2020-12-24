@@ -4,7 +4,7 @@ void main()
 {
    int no[10],i,n;
    clrscr();
-   printf("Please enter 10 natural numbers");
+   printf("Please enter 10 natural numbers, Please not enter zero");
    for(i=0;i<10;i++)
    {
       scanf("%d",&no[i]);
